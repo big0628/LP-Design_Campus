@@ -1,0 +1,715 @@
+:root {
+    --blue-color: #0FABB5;
+    --light-blue-color: #E3FAFF;
+}
+html {
+    scroll-behavior: smooth;
+}
+.section-name{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 16px;
+    line-height: 32.69px;
+}
+.section-activesymbol{
+    border: 2px solid var(--blue-color);
+    width: 60px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative; 
+}
+#btn-top{
+    width: 56px;
+    height: 56px;
+    right: 36px;
+    bottom: 36px;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+}
+/***************************************************************************************************************************************
+*********************************************                  Main Part                 *********************************************
+***************************************************************************************************************************************/
+.section-main{
+    position: relative;
+    background-image: url('../img/home_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 760px;
+}
+.section-main .container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    bottom: 64px;
+    left: 13.89%;
+    gap: 18px;
+}
+.main-greeting{
+    font-size: 36px;
+    text-align: left;
+    padding: 5px 9px 3px 22px;
+    background-color: white;
+    width: 296px;
+    height: 63px;
+    line-height: 49.03px;
+}
+.main-content{
+    font-size: 54px;
+    width: 790px;
+    height: 96px;
+    padding: 11px 27px;
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 992px) {  
+    .section-main .container{
+        left: 20px;
+        bottom: 52px;
+    }
+    .main-content{
+        font-size: 36px;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 573px) {
+    .main-greeting{
+        font-size: 28px;
+        padding: 3px 0px 2px 13px;
+        width: 221px;
+        height: 54px;
+        color: black;
+    }
+    .main-content{
+        font-size: 22px;
+        padding: 17px 28px 20px 9px;
+        height: 63px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 400px) {
+    .section-main{
+        height: 700px;
+        background-image: url('../img/home_background1.jpg');
+    }
+    .font-noto-sans{
+        font-family: 'Noto Sans JP';
+    }
+}
+/***************************************************************************************************************************************
+*********************************************                  First Part                 *********************************************
+***************************************************************************************************************************************/
+.section-first{
+    height: 186px;
+}
+.section-first .container{
+    background-color: white;
+}
+.section-first .container div{
+    color: #333333;
+    font-size: 20px;
+    margin: 0px;
+    max-width: 440px;
+    text-align: center;
+    line-height: 36px;
+}
+.section-first .container span{
+    color: var(--blue-color);
+    font-weight: 700;
+}
+@media screen and (max-width: 520px) {
+    .section-first{
+        height: 160px;
+    }
+    .section-first .container div{
+        font-size: 16px;
+        line-height: 28.8px;
+        max-width: 300px;
+    }
+}
+/***************************************************************************************************************************************
+****************************************                   Checkgroup Part                 *********************************************
+***************************************************************************************************************************************/
+.section-checkgroup{
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: var(--light-blue-color);
+}
+.section-checkgroup .container{
+    display: flex;
+    max-width: 1037px;
+    margin: 0 auto;
+}
+.checkgroup-image{
+    width: 370px;
+}
+.checkgroup-image img{
+    height: 100%;
+}
+.checkgroup-image img:last-child{
+    display: none;
+}
+.checkgroup-content{
+    width: 64.32%;
+    padding: 36px 73px 36px 56px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.section-checkgroup .checkbox-content{
+    color: #333333;
+    line-height: 20.8px;
+}
+.icon_checkbox{
+    width: 22px;
+    height: 24.44px;
+}
+.checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+@media screen and (max-width: 1036px) {
+    .section-checkgroup{
+        padding-top: 30px;
+        padding-bottom: 33px;
+    }
+    .section-checkgroup .container{
+        max-width: 700px;
+    }
+    .checkgroup-content{
+        padding: 10px 20px;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 699px) {
+    .section-checkgroup{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .checkgroup-image {
+        width: 296px;
+    }
+    .section-checkgroup .container{
+        flex-direction: column;
+    }
+    .checkgroup-image , .checkgroup-content{
+        width: 100%;
+    }
+    .checkgroup-content{
+        padding: 33px 14px 30px 16px;
+        gap: 24px;
+        font-size: 14px;
+    }
+    .section-checkgroup .checkbox-item{
+        gap: 10px;
+    }
+    .section-checkgroup .checkbox-content{
+        line-height: 19.6px;
+    }
+    .icon_checkbox{
+        width: 17px;
+        height: 19px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .checkgroup-image{
+        height: 184px;
+    }
+    .checkgroup-image img:last-child{
+        display: block;
+    }
+    .checkgroup-image img:first-child{
+        display: none;
+    }
+}
+/***************************************************************************************************************************************
+****************************************                   Banner Part                 *********************************************
+***************************************************************************************************************************************/
+.section-banner {
+    background-color: var(--blue-color);
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 128px;
+}
+.section-banner .banner-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.section-banner .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid var(--light-blue-color);
+    margin: 0 auto;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 992px) {
+    .section-banner .arrow-down {
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+        border-top: 23px solid var(--light-blue-color);
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-banner .banner-text {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 205px;
+    }
+}
+/***************************************************************************************************************************************
+****************************************                   Banner Part                 *********************************************
+***************************************************************************************************************************************/
+.section-feature{
+    padding-top: 88px;
+    padding-bottom: 78px;
+}
+.section-feature .feature-body{
+    padding-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1020px;
+}
+.feature-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.feature-item .content-title{
+    font-weight: 700;
+}
+.feature-item .content-details{
+    font-size: 14px;
+    line-height: 23.8px;
+}
+@media screen and (max-width: 699px) {
+    .section-feature {
+        padding: 64px 38px;
+    }
+    .feature-body{
+        grid-template-columns: auto !important;
+        gap: 60px;
+        padding-top: 48px;
+    }
+}
+/***************************************************************************************************************************************
+************************************                   Advertisement Part                 *********************************************
+***************************************************************************************************************************************/
+.section-advertisement{
+    position: relative;
+    background-image: url('../img/home_phone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 65.5px;
+    padding-bottom: 65.5px;
+}
+.section-advertisement .container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+.section-advertisement .content-text{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40.8px;
+    text-align: center;
+}
+.btn-message{
+    color: white;
+    padding: 12px 20px;
+    background-color: #F13C68;
+    font-weight: 500;
+    width: fit-content;
+}
+.btn-message img{
+    width: 20px;
+    height: 16px;
+    margin-right: 8px;
+}
+@media screen and (max-width: 520px) {
+    .section-advertisement{
+        padding-top: 47px;
+        padding-bottom: 47px;
+        background-image: url('../img/home_phone1.jpg');
+    }
+    .section-advertisement .content-text{
+        text-align: center;
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+    .btn-message{
+        font-weight: 700;
+        width: 280px;
+        height: 64px;
+    }
+}
+/***************************************************************************************************************************************
+************************************                       Padding Part                    *********************************************
+***************************************************************************************************************************************/
+@media screen and (max-width: 520px) {
+    .section-padding{
+        height: 64px;
+        background: white;
+    }
+}
+/***************************************************************************************************************************************
+*********************************                       Courselist Part                    *********************************************
+***************************************************************************************************************************************/
+.section-courselist{
+    padding-top: 88px;
+}
+.section-courselist .section-before{
+    text-align: center;
+    color: black;
+}
+.courselist-body{
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    max-width: 1042px;
+    margin: atuo;
+}
+.courselist-item{   
+    display: grid;
+    grid-template-columns: 440fr 48fr 474fr;
+    padding: 40px;
+    border: 2px solid var(--blue-color);
+}
+.courselist-item .item-image{
+    margin: 15px 0px 15px 32px;
+    background-size: 100% 100%;
+}
+.courselist-item .item-content{
+    padding-right: 32px;
+}
+.courselist-item .item-content .content-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.courselist-item .item-content .content-details{
+    padding-bottom: 8px; 
+    line-height: 28.8px;
+}
+.courselist-item .item-content .content-details br{
+    display: none;
+}
+.courselist-item .content-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Noto Sans';
+}
+.courselist-body .information-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.courselist-body .information-item .highlight{
+    padding: 2px 8px;
+    background-color: var(--blue-color);
+    color: white;
+    line-height: 21.79px;
+}
+@media screen and (max-width: 1045px) {
+    .courselist-body{
+        padding: 55.4px 19.5px 64px 19.5px; 
+        gap: 40px;
+    }
+    .courselist-item{
+        padding: 10px;
+    }
+    .courselist-item .item-content .content-title{
+        font-size: 18px;
+    }
+    .courselist-item .item-content .content-details{
+        font-size: 15px;
+    }
+    .courselist-item .content-information{
+        font-size: 15px;
+    }
+    .courselist-item .item-image{
+        margin: auto 0 auto 32px;
+    }
+}
+@media screen and (max-width: 699px) {
+    .courselist-body{
+        padding: 55.4px 19.5px 64px 19.5px; 
+        gap: 40px;
+    }
+    .courselist-item{
+        grid-template-columns: auto;
+        padding: 25px 19px 42px 19px;
+        gap: 12px;
+    }
+    .courselist-item .item-image{
+        margin: 0;
+    }
+    .courselist-item .item-content{
+        padding: 0px;
+    }
+    .courselist-item .item-content .content-title{
+        padding-bottom: 16px;
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .courselist-item .item-content .content-details{
+        padding-bottom: 24px; 
+        font-size: 14px;
+        line-height: 25.2px;
+    }
+    .courselist-item .item-content .content-details br{
+        display: block;
+    }
+    .courselist-item .content-information{
+        font-size: 16px;
+    }
+    .courselist-item .content-information .content{
+        font-size: 14px;
+    }
+    .courselist-item .content-information .content.font-16{
+        font-size: 16px;
+    }
+    .section-courselist{
+        padding-top: 64px;
+    }
+}
+/***************************************************************************************************************************************
+*********************************                       Courselist Part                    *********************************************
+***************************************************************************************************************************************/
+.section-map{
+    padding-top: 94.5px;
+    padding-bottom: 94.5px;
+    background-color: white;
+}
+.map-content{
+    display: grid;
+    grid-template-columns: 446fr 600fr;
+    padding-top: 64px;
+    max-width: 1045px;
+    margin: auto;
+}
+.map-content .content-details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+.map-content .details-title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.96px;
+}
+.map-content .details-text1 , .map-content .details-text2{
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    line-height: 22px;
+}
+.map-content .details-text2{
+    line-height: 21.79px;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+}
+@media screen and (max-width: 1047px) {
+    .map-content{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .map-content .details-title{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 699px) {
+    .section-map{
+        padding: 64px 0px;
+    }
+    .map-content{
+        grid-template-columns: 1fr;
+        padding: 48px 0 0 0;
+    }
+    .map-content .content-details{
+        order: 2;
+        padding: 28px 20px 0px 20px;
+    }
+    .map-content .content-details .details-title{
+        font-size: 18px;
+        line-height: 24.52px;
+    }
+    .map-content .content-image{
+        order: 1;
+    }
+}
+@media screen and (max-width: 400px) {
+    iframe{
+        height: 340px;
+    }
+}
+/***************************************************************************************************************************************
+*********************************                          Faq Part                       *********************************************
+***************************************************************************************************************************************/
+.section-faq{
+    background-color: #F5F5F5;
+}
+.section-faq .section-name{
+    padding-top: 88px;
+}
+.faq-body{
+    padding-top: 30px;
+    padding-bottom: 106px;
+    margin: auto;
+    max-width: 970px;
+}
+.faq-item{
+    padding-top: 24px;
+}
+.accordion {
+    position: relative;
+    height: 75px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.accordion span , .panel span{
+    display: inline-block;
+    color: #333333;
+    font-family: 'Noto Sans JP';
+}
+.accordition-text{
+    padding-left: 30px;
+    font-size: 16px;
+}
+.accordion .icon_Q span{
+    width: 60px;
+    height: 60px;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 36px;
+    border-radius: 50%;
+    text-align: center;
+}
+.panel {
+    position: relative;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    background: transparent;
+    margin-top: 7px;
+    display: none;
+    align-items: center;
+    padding-top: 10px;
+}
+.panel .icon_A span{
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+    font-size: 36px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -10px;
+}
+.accordition-space{
+    height: 24px;
+    border-bottom: 1px solid #878787;
+}
+.accordion .icon_arrow{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+.accordion:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/icon_uparrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-top: 10px;
+    transition: all 0.3s;
+    transform: translateY(-50%);
+    transform-origin: 50% 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.active:after {
+    transform: translateY(-50%) rotate(-180deg);
+}
+@media screen and (max-width: 1036px) {
+    .faq-body{
+        max-width: 625px;
+    }
+    .panel {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 699px) {
+    .faq-body{
+        padding: 48px 20px 64px 20px;
+        margin: 0;
+    }
+    .panel {
+        padding-right: 0;
+    }
+    .accordition-space{
+        height: 24px;
+    }
+    .accordion:after {
+        width: 17px;
+        height: 10px;
+        margin: 0px;
+        background-image: url('../img/icon_uparrow1.svg');
+    }
+    .active:after {
+        transform:  rotate(-180deg);
+    }  
+    .accordion .icon_Q span, .panel .icon_A span{
+        width: 36px;
+        height: 36px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .accordition-text{
+        padding-left: 16px;
+        padding-right: 33px;
+    }
+    .accordition-text br{
+        display: none;
+    }
+    .section-faq .section-name{
+        padding-top: 64px;
+    }
+}

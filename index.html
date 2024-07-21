@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>DESIGN CAMPUS</title>
+        <script src="./js/header.js"></script>
+        <script src="./js/index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-icon">
+                <img src="./img/icon_logo.png" alt="Logo">
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#section-feature">本講座の特徴</a></li>
+                    <li><a href="#section-courselist">講座一覧</a></li>
+                    <li><a href="#section-faq">よくあるご質問</a></li>
+                </ul>
+                <a class="btn-signup" href="#section-advertisement">お申し込みはこちら</a>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">
+                <img id="menuIcon" src="./img/icon_hamburger.png" alt="Hamburger">
+                <img id="closeIcon" src="./img/icon_close.png" alt="Hamburger">
+            </button>
+            <div class="full-screen-menu" id="menu">
+                <a href="#section-feature" onclick="toggleMenu()">本講座の特徴</a>
+                <a href="#section-courselist" onclick="toggleMenu()">講座一覧</a>
+                <a href="#section-faq" onclick="toggleMenu()">よくあるご質問</a>
+                <a class="btn-signup" href="#section-advertisement" onclick="toggleMenu()">申し込みはこちら</a>
+            </div>
+        </header>
+        <div class="container-total">
+            <div id="btn-top" onclick="goTopPosition()">
+                <img src="./img/icon_top.svg" alt="Top">
+            </div>
+            <section class="section-main">
+                <div class="container">
+                    <span class="main-greeting">はじめの一歩！</span>
+                    <div class="main-content"><span class="font-noto-sans">1Day</span><span>&nbsp;クリエイティブセミナー</span></div>
+                </div>
+            </section>
+            <section class="section-first flex-center">
+                <div class="container">
+                    <div>
+                        デザイナーやディレクターに興味がある皆さんの<span>「こんな勉強したかった！」</span>にお答えします！
+                    </div>
+                </div>
+            </section>
+            <section class="section-checkgroup flex-center">
+                <div class="container">
+                    <div class="checkgroup-image">
+                        <img src="./img/home_sectionfirst.jpg" alt="First">
+                        <img src="./img/home_sectionfirst1.jpg" alt="First">
+                    </div>
+                    <div class="checkgroup-content">
+                        <div class="checkbox-item">
+                            <img class="icon_checkbox" src="./img/icon_checkbox.png" alt="checkbox">
+                            <div class="checkbox-content">デザインやディレクションの勉強をしてみたいけど何からはじめて良いかわからない...</div>
+                        </div>
+                        <div class="checkbox-item">
+                            <img class="icon_checkbox" src="./img/icon_checkbox.png" alt="checkbox">
+                            <div class="checkbox-content">
+                                ページを作成したけど成約率をあげるにはどうすればいいだろう...
+                            </div>
+                        </div>
+                        <div class="checkbox-item">
+                            <img class="icon_checkbox" src="./img/icon_checkbox.png" alt="checkbox">
+                            <div class="checkbox-content">
+                                SEOとか聞くけど集客するための対策って具体的にはどういうことなんだろう...？
+                            </div>
+                        </div>
+                        <div class="checkbox-item">
+                            <img class="icon_checkbox" src="./img/icon_checkbox.png" alt="checkbox">
+                            <div class="checkbox-content">
+                                デザインを外注依頼してみたいけど、失敗しないコツってなんだろう...？
+                            </div>
+                        </div>
+                        <div class="checkbox-item">
+                            <img class="icon_checkbox" src="./img/icon_checkbox.png" alt="checkbox">
+                            <div class="checkbox-content">
+                                デザイナーやディレクターの仕事をちょっとだけ体験してみたい！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-banner flex-center">
+                <div class="arrow-down"></div>
+                <div class="banner-text">
+                    <span class="font-noto-sans">1Day</span>セミナーでそんなお悩みを解決！
+                </div>
+            </section>
+            <section id="section-feature" class="section-feature flex-center">
+                <div class="container">
+                    <div class="section-name">本講座の特徴</div>
+                    <div class="section-activesymbol"></div>
+                    <div class="feature-body">
+                        <div class="feature-item">
+                            <div class="item-image-first">
+                                <img src="./img/home_feature3.jpg" alt="">
+                            </div>
+                            <div class="content-title">気になる講座を1日で気軽に学べる</div>
+                            <div class="content-details">デザイナー・ディレクターとして身につけておきたいスキルを「試しに少し触ってみたい！」という方々が気軽に参加できる2時間講座に<br>なってます！</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="item-image-second">
+                                <img src="./img/home_feature2.jpg" alt="">
+                            </div>
+                            <div class="content-title">実践経験豊富な講師陣</div>
+                            <div class="content-details">それぞれのセミナー毎に実戦経験が豊富な講師陣が直接教えてくれます！また、実践的な使い方も併せて教えてもらえるので有意義な時間を過ごすことができます！</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="item-image-third">
+                                <img src="./img/home_feature1.jpg" alt="">
+                            </div>
+                            <div class="content-title">参加者同士で交流もできる</div>
+                            <div class="content-details">それぞれのセミナーテーマに興味のある参加者が集まるため、思いが同じ方々との交流をすることができます！コワーキングスペースで実施するので互いに雑談がてら悩み相談などをして頂ける環境です！</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-advertisement" class="section-advertisement flex-center">
+                <div class="container">
+                    <div class="content-text">特に事前準備などはございません！<br>どなたでもお気軽にご参加ください！</div>
+                    <a class="btn-message flex-center" href="/">
+                        <img src="./img/icon_message.svg" alt="Message">
+                        <span>セミナーお申し込みはこちら</span>
+                    </a>
+                </div>
+            </section>
+            <section class="section-padding"></section>
+            <section id="section-courselist" class="section-courselist flex-center">
+                <div class="container">
+                    <div class="section-before">こんなことが学べる！</div>
+                    <div class="section-name">講座一覧</div>
+                    <div class="section-activesymbol"></div>
+                    <div class="courselist-body">
+                        <div class="courselist-item">
+                            <div class="item-image first-item">
+                                <img src="./img/home_otherhompage.jpg" alt="">
+                            </div>
+                            <div></div>
+                            <div class="item-content">
+                                <div class="content-title"><span class="font-noto-sans">2</span>時間でかんたんに<br>名刺デザインを作成してみよう！</div>
+                                <div class="content-details">たった2時間で名刺が作れる!?今まで名刺を作成するためには「専門的な知識やスキル」「時間」がかかることは当然のことでした。<br>Adobe Expressを使うことで「専門的な知識やスキル不必要」「短時間」でサクサク作ることができます！</div>
+                                <div class="content-information">
+                                    <div class="information-item">
+                                        <div class="highlight">日時</div>
+                                        <div class="content">2023/12/10(日) 14:00〜15:30</div>
+                                    </div>
+                                    <div class="information-item">
+                                        <div class="highlight">講師</div>
+                                        <div class="content">濱野 将</div>
+                                    </div>
+                                    <div class="information-item">
+                                        <div class="highlight">費用</div>
+                                        <div class="content font-16">3,000円</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courselist-item">
+                            <div class="item-image second-item">
+                                <img src="./img/home_seo.jpg" alt="">
+                            </div>
+                            <div></div>
+                            <div class="item-content">
+                                <div class="content-title">集客のためのWeb活用術<br>〜SEOとユーザビリティのお話〜</div>
+                                <div class="content-details">「ホームページを作ったけど、いまいち役に<br>立っているのかわからない…」そんなあなたに<br>ホームページの活用術と、顧客とのコミュニ<br>ケーションにつながる方法をお伝えしていきま<br>す。</div>
+                                <div class="content-information">
+                                    <div class="information-item">
+                                        <div class="highlight">日時</div>
+                                        <div class="content">2023/12/17(日) 14:00〜15:30</div>
+                                    </div>
+                                    <div class="information-item">
+                                        <div class="highlight">講師</div>
+                                        <div class="content">小泉 誠</div>
+                                    </div>
+                                    <div class="information-item">
+                                        <div class="highlight">費用</div>
+                                        <div class="content font-16">3,000円</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-map" class="section-map">
+                <div class="section-name">開催場所</div>
+                <div class="section-activesymbol"></div>
+                <div class="map-content flex-center">
+                    <div class="content-details">
+                        <div class="details-title">
+                            <span>DESIGN CAMPUS</span>
+                            <span>コワーキングスペース</span>
+                        </div>
+                        <div class="details-text1">〒192-0083<br>東京都八王子市三崎町4-11 トーネンビル5F</div>
+                        <div class="details-text2">JR八王子駅北口を出て徒歩4分</div>
+                    </div>
+                    <div class="content-image">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.894966747503!2d139.33592323885617!3d35.657546872487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191d36c0322575%3A0xa366f8ae3c4953e0!2sDESIGN%20CAMPUS!5e0!3m2!1sja!2s!4v1721256710078!5m2!1sja!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section id="section-faq" class="section-faq">
+                <div class="section-name">よくあるご質問</div>
+                <div class="section-activesymbol"></div>
+                <div class="faq-body">
+                    <div class="faq-item">
+                        <button class="accordion">
+                            <span>
+                                <div class="icon_Q">
+                                    <span>Q</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">参加するためにはどうすればいいですか？</span>
+                        </button>
+                        <div class="panel">
+                            <span>
+                                <div class="icon_A">
+                                    <span>A</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">セミナーに参加希望の方は、オンラインフォームからお申し込みください。 </span>
+                        </div>
+                        <div class="accordition-space"> </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="accordion">
+                            <span>
+                                <div class="icon_Q">
+                                    <span>Q</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">セミナーに参加する際の服装はありますか？</span>
+                        </button>
+                        <div class="panel">
+                            <span>
+                                <div class="icon_A">
+                                    <span>A</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">カジュアルな服装で構いません。<br>ただし、セミナー会場が冷房で冷えることがあるため、軽く羽織るものを持参することをおすすめします。</span>
+                        </div>
+                        <div class="accordition-space"> </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="accordion">
+                            <span>
+                                <div class="icon_Q">
+                                    <span>Q</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">予約をキャンセルしたい場合、どのような手続きが必要ですか？</span>
+                        </button>
+                        <div class="panel">
+                            <span>
+                                <div class="icon_A">
+                                    <span>A</span>
+                                </div>
+                            </span>
+                            <span class="accordition-text">キャンセルの場合、開催前日までにメールでinfo@exsample.comまでご連絡ください。<br>当日のキャンセルについてはキャンセル料が発生しますのでご注意ください。</span>
+                        </div>
+                        <div class="accordition-space"> </div>
+                    </div>
+                </div>
+            </section>      
+            <section class="section-advertisement flex-center">
+                <div class="container">
+                    <div class="content-text">特に事前準備などはございません！<br>どなたでもお気軽にご参加ください！</div>
+                    <a class="btn-message flex-center" href="/">
+                        <img src="./img/icon_message.svg" alt="Message">
+                        <span>セミナーお申し込みはこちら</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div>Copyright 2023 DESIGN CAMPUS</div>
+        </footer>
+    </body>
+</html>
